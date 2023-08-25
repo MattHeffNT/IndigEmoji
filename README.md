@@ -1,6 +1,10 @@
-# KaytejEmoji
+# IndigEmoji
 
 This is an Ionic(v6)/React/TypeScript based recreation of the [IndigEmoji](https://github.com/Indigemoji-Australia/indigemoji-app) app.
+
+And the source code for the updated IndigEmoji app on the play store:
+
+https://play.google.com/store/apps/details?id=com.indigemoji
 
 ## Install
 
@@ -22,16 +26,6 @@ Features such as the social sharing will not work from just a web server so you 
 
 - Develop for Android <a href="https://ionicframework.com/docs/developing/android"> Android Documentation </a>
 - Develop for IOS <a href = "https://ionicframework.com/docs/developing/ios"> IOS Documentation </a>
-
-## Python files
-
-The python files in the repository are quality of life scripts. The <strong>ConvertXL</strong> script generates the table and reformats some of the cells to get them ready to be exported as a CSV file.We have this running in a virtual environment (hence requirements.txt) So make sure you run:
-
-```
-pip install -r requirements.txt
-```
-
-- Once converted to CSV then we can run Sam's script <strong>check_images.py</strong> to convert to JSON which we then use to dynamically load in the audio etc.
 
 <!-- ## create your own emoji App -->
 
