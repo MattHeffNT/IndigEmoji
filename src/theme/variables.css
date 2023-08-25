@@ -81,7 +81,7 @@ http://ionicframework.com/docs/theming/ */
 /* just using this as reference for now */
 ion-toolbar {
   /* --background; */
-  --background: url('../assets/images/background.webp') center/97% !important;
+  --background: url('../assets/images/splash.png') center/97% !important;
 }
 
 ion-searchbar {

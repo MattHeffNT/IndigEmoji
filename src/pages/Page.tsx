@@ -11,7 +11,7 @@ import React from 'react';
 import { useParams } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
 import './Page.css';
-import homeIcon from '../assets/images/start_header_no.webp';
+import homeIcon from '../assets/images/start_header_no.png';
 
 const Page: React.FC = () => {
   // this grabs the link name/title and puts it as  the page title

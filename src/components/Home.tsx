@@ -74,7 +74,7 @@ const Home: React.FC = () => {
               key={id}
               alt={emoji.name}
               src={emoji.file}
-              id={emoji.name_kaytetye}
+              id={emoji.name_arrernte}
               className='emoji'
               onClick={() => {
                 setMyModal({ isOpen: true });

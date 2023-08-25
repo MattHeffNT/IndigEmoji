@@ -1,14 +1,8 @@
-import {
-  IonContent,
-  IonItem,
-  IonList,
-  IonMenu,
-  IonMenuToggle,
-} from '@ionic/react';
-import homeIcon from '../assets/images/homeIcon.webp';
-import exclaimIcon from '../assets/images/infoIcon.webp';
-import questionIcon from '../assets/images/icon4.webp';
-import peopleIcon from '../assets/images/icon5.webp';
+import { IonContent, IonItem, IonList, IonMenu, IonMenuToggle } from '@ionic/react';
+import homeIcon from '../assets/images/icon1.png';
+import exclaimIcon from '../assets/images/icon2.png';
+import questionIcon from '../assets/images/icon3.png';
+import peopleIcon from '../assets/images/icon4.png';
 import { useLocation } from 'react-router-dom';
 import './styles/Menu.css';
 
@@ -45,25 +39,20 @@ const Menu: React.FC = () => {
   const location = useLocation();
 
   return (
-    <IonMenu
-      contentId='main'
-      type='overlay'
-      side='end'
-      className='my-custom-menu'>
+    <IonMenu contentId="main" type="overlay" side="end" className="my-custom-menu">
       <IonContent>
         {/* </IonList> */}
-        <IonList id='sideMenu'>
+        <IonList id="sideMenu">
           {appPages.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={true}>
                 <IonItem
-                  className={
-                    location.pathname === appPage.url ? 'selected' : ''
-                  }
+                  className={location.pathname === appPage.url ? 'selected' : ''}
                   routerLink={appPage.url}
-                  routerDirection='none'
-                  lines='none'
-                  detail={false}>
+                  routerDirection="none"
+                  lines="none"
+                  detail={false}
+                >
                   <img src={appPage.image} alt={appPage.title}></img>
                 </IonItem>
               </IonMenuToggle>

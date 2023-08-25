@@ -1,113 +1,92 @@
-file,name,name_kaytetye,audio,phrases,phrases_kaytetye,phrases_english
-001_artweye.png,Man,Artweye,001_artweye.mp3,001phrase_artweye.mp3,"Artweye nyarte apenkerne atyenge angkewethe, akngke ampilewethe, akngke apeke.",That man is coming to talk to me maybe to tell me something.
-002_arelhe.png,Woman,Arelhe,002_arelhe.mp3,002phrase_arelhe.mp3,"Arelhe nthewarte ayenge angkewethawe, atye apeke artntwewethe kwere arntwewe apeke katye ilewethe atyenge.",I want to ask that woman over there to see if she can get some water for me.
-003_mwetekaye.png,Car,Mwetekaye,003_mwetekaye.mp3,003phrase_mwetekaye.mp3,"Mweteke nthelarte aynanthe apewenawe, alwengayewene aynewanthe iterrtye. Angketye aynanthe arlengarle alpeyenteyanemeketye.","Let's ask that person if they can take us in the car, its too far to walk."
-004_mwetekaye_errpatye.png,Bush car,Mwetekaye errpatye,004_mwetekaye_errpatye.mp3,004phrase_mwetekaye_errpatye.mp3,"Mweteke atyeyenge arntenhe. Nyartepe errpatyarrenhe, tyre tyampe atyeyenge wanterteyange nhangarteye, errpatyarrenhe.","My car is not working, the tyres are no good, and something else is broken."
-005_marnte.png,Bush bus,Marnte,005_marnte.mp3,005phrase_marnte.mp3,"Ngke, marntele aynanthe alpewene nharte aynanthe arntyarrtyewene stopem-ayleme.",Stop the bus so we can go back on it.
-006_pweltye.png,Footy,Pweltye,006_pweltye.mp3,006phrase_pweltye.mp3,"Pweltye aynanthe ape nywerrpe inengele aynanthe play arreranewetheye, nywerrpe-nywerrepele.",We used to play traditional football with teams of different skin groups.
-007_pantye.png,Swag,Pantye,007_pantye.mp3,007phrase_pantye.mp3,"Pantye arrene tyangkwerre atyengawe, atnkwe ayenge enwewethe.",Put the swag down this way for me so I can sleep.
-008_mwekarte.png,Hat,Mwekarte,008_mwekarte.mp3,008phrase_mwekarte.mp3,"Mwekarte etnyewenawe, elye, elye.",Give me a hat for shade.
-009_ware.png,Fire,Ware,009_ware.mp3,009phrase_ware.mp3,"Ware nyarte arrpewenawe, wante ngayele aynewethe apeke, atnwenthe arlewatyerre.","Let's light a fire, as we want to eat some food, cook this goanna meat."
-010_arlpe.png,Ashes,Arlpe,010_arlpe.mp3,010phrase_arlpe.mp3,"Arlpe rteye atyenge etnyewenawe, ayengepe apeyake arlpewe, tyanywengepe atye atherrke aynewethe.","Can you give me some ashes? I dont have any, just so I can mix it with my tobacco to chew."
-011_tyampete.png,Billy can,Tyampete,011_tyampete.mp3,011phrase_tyampete.mp3,"Tyampete atyenge etnyewene arntwe apeke atye ilewethe, teye apeke atye kwathewethe.",Give me a billycan so I can get some water or make tea to drink.
-012_apmere.png,Country / place,Apmere,012_apmere.mp3,012phrase_apmere.mp3,"Apmere atyeyenge nharte althewenawe, ayenge atnkwe enwewethe, pantyarrangele tyampe.",Clean the area there so I can put the swag down and sleep.
-013_kayle.png,Boomerang,Kayle,013_kayle.mp3,013phrase_kayle.mp3,Kayle atyenge nharte etnyewenawe! Elkwatherre atyenge apekarle ahenge alweye.,"Give me that boomerang, for protection from someone who might be looking to fight me."
-014_atneme.png,Digging stick,Atneme,014_atneme.mp3,014phrase_atneme.mp3,"Atneme atyenge nharte etnyewenawe! Pwenge inenge angkerle, 'Atneme atyenge nharte etnyewenawe, ayenge atyangkwerre apewene alewatyerre apeke alarrewethe.'","Give me that yamstick, an old lady might say, I want to go for a walk and look around for some goanna."
-015_kalarte.png,Shield,Kalarte,015_kalarte.mp3,015phrase_kalarte.mp3,"Aheketye apeke aynewenhanthe aylkewethe etnyewene atyenge karlarte nhartepe, awe lhangkalewe apeke (?) nhartepe akngke aynanthe aylewethe.","Give me that shield, so we can protect ourselves in the fight. We also use a shield in our ceremonies."
-016_ertntweyane.png,Woman dancing,Ertntweyane,016_ertntweyane.mp3,016phrase_ertntweyane.mp3,"Awelye rrkante artnwenge nyangarte tyampe akaltyinewethe alkenharengele,  akaltyarreranewethe re, awelye  nthelarte.","Get the women to teach the children their ceremonies, the children need to grow up learning these things."
-017_ltharte.png,Men's dance,Ltharte,017_ltharte.mp3,017phrase_ltharte.mp3,"Lthartewe aynanthe cleanemayleye, elyakerre mpwarene aynanthe rlengke etnherranewethe, lthartelke aynanthe iterrtye inenge akarreranewethe atnkwarengele, atwerrpele arlenge aylerantyewethe.","Today we will prepare the ceremony ground for tonight and make a shade structure. People will gather here for the ceremony tonight, or in the late afternoon to start the singing."
-018_artnke.png,Flat-topped hill,Artnke,018_artnke.mp3,,,
-019_anaty-anatye.png,Heart,Anaty-anatye,019_anaty-anatye.mp3,019phrase_anaty-anatye.mp3,"Anaty-anatye ayenge a little bit errpatyawe, amperrane ayenge anaty-anatyepe.","My heart is not quite right, my heart is burning."
-020_iterrtyarenge.png,Aboriginal flag,Iterrtyarenge,020_iterrtyarenge.mp3,020phrase_iterrtyarenge.mp3,"Awe nyarte, aynewantheyenge nhartepe errpwerle inenge arenge flag-pe atanthe mpwarenhe. Iterrtyarenge.",This is our Aboriginal flag design. It belongs to Aboriginal people.
-021_eltye.png,Hand,Eltye,021_eltye.mp3,021phrase_eltye_and_tywekere.mp3,"Tywekere arrenke aynanthe mpelarte, eltye atyenge arene, tywekere arreranenke aynanthe!","We dont like it, see how Im waving my hand, that means we dont like it or want to do it."
-022_nthakenharrerane.png,What's up?,Nthakenhe arrerane? ,022_nthakenharrerane.mp3,022phrase_nthakenharrerane.mp3,"Nthakenhe nge apenkawe anteyanawe, nthakenhe arrenkepe? Ayengepe anteyane rtame.","What do you want to do, are you coming or staying? No I'll stay."
-023_awenyerrarte.png,One,Awenyerrarte,023_awenyerrarte.mp3,,,
-024_atherre.png,Two,Atherrarte,024_atherre.mp3,,,
-025_arrkwentye.png,Three,Arrkwentye,025_arrkwentye.mp3,,,
-026_peyakele.png,No,Peyakele,026_peyakele.mp3,026phrase_peyakele.mp3,Ye peyakele rtamawe. Ye peyakele mentye.,"Nothing, leave it."
-027_ngayele.png,Hungry,Ngayele,027_ngayele.mp3,027phrase_ngayele.mp3,"Ngayele ayenge nyartepe, aperrane etnthwerrane ngayelewe etnyewethe apeke atyenge.","I'm hungry now, I'm walking around hoping someone might give me some food."
-028_angkewethe.png,Talk,Angkewethe,028_angkewethe.mp3,028phrase_angkewethe.mp3,"Angkene nge atyenge wentarawe, atyenge ntethe ampilene, wentararle ntethe ampilene, atnhante amernele arlenge althilerantyengarle?","Tell me, speak up loud and tell me about who is fighting."
-029_intelhe_anteyane.png,Liar,Ntelhanteyane,029_intelhe_anteyane.mp3,029phrase_intelhe_anteyane.mp3,Nhartepe ntelhanteyane rtame. Tewene errwanthe nharte elpathewethe nthelaperte ntelhanteyane.,Don't listen to him he is telling lies.
-030_tywekere.png,Dislike,Tywekere,030_tywekere.mp3,030phrase_tywekere.mp3,"Tywekere arrenke aynanthe mpelarte, eltye atyenge arene, tywekere arrenke aynanthe!","We dont like it, see how I'm waving, that means we dont like it or want to do it."
-031_akerlite.png,Quiet,Akerlite,031_akerlite.mp3,031phrase_akerlite.mp3,"Akerlitarrene ngawe! Tewene angkewethe wentare, akerlitarrene nge!","Be quiet don't say anything, don't say it loud, stay quiet."
-032_rlengke.png,Today,Rlengke,032_rlengke.mp3,032phrase_rlengke.mp3,Rlengke ayenge aperrernenyeye rtame.,I'm coming today.
-033_arlweye.png,Father,Arlweye,033_arlweye.mp3,033phrase_arlweye.mpe,"Arlweye rteye atyengaye, nthekangkwerre repe? Awe, arrenye re apenhe arlelke apewethe.",Where's my father? Oh he's gone hunting over there.
-034_kakeye.png,Older brother,Kakeye,034_kakeye.mp3,034phrase_kakeye.mp3,Kakeye rteye atyeyenge?,Where’s my big brother?
-035_tyatye.png,Mother's father,"Tyatye, tyewarleye",035_tyatye.mp3,035phrase_tyatye_tyewarleye.mp3,"Atyewaleye rteye atyeyenge? Rwengkawe, nharte re entweyane arntetye.","Where is my grandfather (mother's father)? Not sure, there he is lying down sick."
-036_atyerreye.png,Younger sibling,Atyerreye,036_atyerreye.mp3,036phrase_atyerreye.mp3,Atyerreye atyenge rteye? Nyarte atyeyenge atyerreye rteye? Nthekangkwerre re aytnarrenhe. Rwengke re apenhawe.,Where did my younger brother go? He's gone somewhere. I don't know where he went.
-037_artwaleye.png,"Nephew, niece",Artwaleye,037_artwaleye.mp3,037phrase_artwaleye.mp3,"Artwaleye atyeyenge rteye? Nyartepe, artwaleye atyeyenge.",Wheres my sister's child? The handsign for which is like this.
-038_altyeleye.png,Female cousin,Altyeleye,038_altyeleye.mp3,038phrase_altyeleye.mp3,Altyeleye rteye atyeyengaye? Aytnarrenhelke re. 'Rwengke re apelapenhe'.,"Where did my cousin just disappear to? 'I don't know, she went somewhere.'"
-039_mpwerneye.png,"Spouse, Brother-in-law",Mpwerneye,039_mpwerneye.mp3,039phrase_mpwerneye.mp3,"Nharteye, mpwerneye, you gotta atyenge arrkare rteye?","Hey brother-in-law where is your sister, my wife."
-040_nyanye.png,Mother's mother,Nyanye,040_nyanye.mp3,040phrase_nyanye.mp3,"Nyanye rteye atyeyenge? Nthekangkwerre aparte aytnarrelhaytenye. No arnpatyarrenhe re, aynewanthe ketye eletnhelaytenye, altherarrengele.",Where's my grandmother? I dont know she felt lonely and just left us and went somewhere.
-041-alelawe.png,Wait,Alelawe,041_alelawe.mp3,041phrase_alelawe.mp3,Ye alelaperte nge anenawe! Alelaperte ayenge etarrengele alwene apertame.,You wait here for a while; I'll think about it and come back.
-042_rlwaylpe.png,Kudaitcha,Rlwaylpe,042_rlwaylpe.mp3,,,
-043_eltyemwerneye.png,Policeman,Eltyemwerneye,043_eltyemwerneye.mp3,043phrase_eltyemwerneye.mp3,"Pwertaye, nthelarte aynewanthe arntarrtyemeketye, eltyemwerneyele.","Watch out there is a policeman there, he might grab us!"
-044_aherne.png,Handful of dirt,Aherne,044_aherne.mp3,044phrase_aherne.mp3,"Ye, ahernepe nyarte aynewantheyenge.",This is our ground (country).
-045_angketye_amperlanteyane.png,Footprints,Angketye amperlanteyane,045_angketye_amperlanteyane.mp3,045phrase_angketye_amperlanteyane.mp3,"Tyelartaye, kwenyele apeke awatnkaperte tyelaperte angketye amperlanpanenhe.","Right here, there’s some tracks which might have been made yesterday or a few days ago. "
-046_aherre_amperlanenhe.png,Kangaroo tracks,Aherre amperlanenhe,046_aherre_amperlanenhe.mp3,046phrase_aherre_amperlanenhe.mp3,"Ye aherr-arengepe aynanthe, amperl-arenke rtame.",We can follow these kangaroo tracks.
-047_anteyanenke.png,People sitting,Anteyanenke,047_anteyanenke.mp3,047phrase_anteyanenke.mp3,Nhartepe erlkwe inenge anteyane lhangkelewe. Lhangkele anteyanewethe artnwengewe aylerantyewe.,"The old men are sitting down over there getting ready for business, to sing the ceremony for young men."
-048_arntwe.png,"Rain, Water",Arntwe,048_arntwe.mp3,048phrase_arntwe.mp3,Ntyerrele arntwe.,Water is also called ‘ntyerrele’.
-049_arelpe.png,Moon,Arelpe,049_arelpe.mp3,,,
-050_aherrke.png,Sun,Aherrke,050_aherrke.mp3,050phrase_aherrke.mp3,"Aherrke-ketye ayenge anteyanawe, ileke-ketye ayenge anteyane, angketye aherrkele ayenge ampeketye.","I'm sitting down because of the prickles and because of the sun which is too hot, my feet might burn."
-051_mataye.png,Cloud,Mataye,051_mataye.mp3,051phrase_mataye.mp3,"Mataye, nyarte aynanthe ayerrere theye erlwarerrantye, awe kngerrake theye apeke, mataye nyartepe apeyayterane, arntwe alkenhe apeke atntheyetnyewethe.",I can see the rain clouds are coming from the north and the east. We might get a big rain storm.
-052_ngentye.png,Soakage,Ngentye,052_ngentye.mp3,,,
-053_kwerralye_erltwe.png,Morning star,Kwerralye erltwe,053_kwerralye_erltwe.mp3,053phrase_kwerralye_erltwe.mp3,Arene errwanthawe! Kngerrake erlwayteye kwerralye erltwe.,"Hey look over there in the east, the morning star will rise!"
-054_mwererre.png,Milky way,Mwererre,054_mwererre.mp3,054phrase_mwererre.mp3,"Ye, Mwererre errwele nharte! Nharte arenawe! Nharte nte arene errwelepe. Mwererre rtame nhartepe atyene artntwerantyene, nte apeke etelarerrantyewethe tneyele akerre.","Look up there, see that, that's what we call the Milky Way. Im telling you this so you will remember it."
-055_enterrke.png,Seven Sisters ,Enterrke,055_enterrke.mp3,055phrase_enterrke.mp3,"Nharte errwanthe arenawe, Enterrke nharte atye showem-aylerantye errwele nharte nte arene, Enterrkepe.","Look up you mob, that's the Seven Sisters, I'm showing you."
-056_angketye_amperrane.png,Burning foot,Angketye amperrane,056_angketye_amperrane.mp3,056phrase_angketye_amperrane.mp3,"Aherrke-ketye ayenge anteyanawe, ileke-ketye ayenge anteyane, angketye aherrkele ayenge ampeketye.","I'm sitting down because of the prickles and because of the sun which is too hot, my feet might burn."
-057_awerantyerrnge.png,Whirly wind,Awerantyerrnge,057_awerantyerrnge.mp3,057phrase_awerantyerrnge.pm3,Pwertaye! Rarre aynewanthe alarremeketye awerantyerrenge nharte apeyayterane aherne impentyele.,Look out for that whirly wind coming; it might throw dirt and dust towards us.
-058_alenye.png,Running water,Alenye,058_alenye.mp3,058phrase_alenye.mp3,"Alenye nharte apeyayterane ketye antekerre theye, ayerrere theye apeke alenye ntheketyarte aynanthe arewene.","That flood water is coming from the south, or maybe the north. Let's have a look."
-059_ngwetyanpe.png,Morning,Ngwetyanpe,059_ngwetyanpe.mp3,059phrase_ngwetyanpe.mp3,Ngwetyanpe nhartepe erlwaytenke kwerralye Erltwepe. ,Thats where the Morning Star rises in the morning.
-060_artenyele.png,Midday ,Artenyele,060_artenyele.mp3,060phrase_artenyele.mp3,Artenyele nyartepe alkerele errwelarrenhele. Artentyele.,It's midday the sun is directly above us.
-061_atwerrpe.png,Late afternoon,Atwerrpe,061_atwerrpe.mp3,061phrase_atwerrpe.mp3,Aherrke nyarte atnywerrane atwerrparrerane.,"The sun is going down, it's late afternoon."
-062_atnkwarengele.png,Night-time,Atnkwarengele,062_atnkwarengele.mp3,062phrase_atnkwarengele.mp3,Atnkwarengele aynanthe alpewenawe!,Let's go its nighttime.
-063_kantye.png,Kangaroo tail,Kantye,063_kantye.mp3,063phrase_kantye.mp3,Aherre nyarte kantye rlwarrinewene aynanthe pwewethe.,"Here's the kangaroo tail, remind us to cook it."
-064_ahakeye.png,Native Currant,Ahakeye,064_ahakeye.mp3,064phrase_ahakeye.mp3,"Ahakeyewe aynanthe apewenawe, ilewethe elkwemene inengepe angkeyayne ahakeyewelke.","Let's go and get native currants, the old ladies said."
-065_anatye.png,Yam,Anatye,065_anatye.mp3,065phrase_anatye.mp3,"Anatyewe aynanthe apewenawe, arrenye nyarte arrere aperte aynanthe apewene kngerrake.","Let's go for yams, just there close by, to the east."
-066_ankwerleye.png,Bush plum,Nkwerleye,066_ankwerleye.mp3,066phrase_ankwerleye.mp3,"Nkwerleye aynanthe aynewethe, elpayarle aynanthe apewene.",Let's go and pick bush plums from the trees down at the creek.
-067_ntyerrme.png,Dogwood seeds,Ntyerrme,067_ntyerrme.mp3,067phrase_ntyerrme.mp3,Ntyerrme inengepe rntwenke akine kngwerele amerne rntwenke akine mpwarerrantyewethe aynterantyewethe arntwe warle atnhantinengele.,"Everybody picks dogwood seeds, you can mix them in water when they are dry and eat them."
-068_alwerre.png,Split-jack,Alwerre,068_alwerre.mp3,068phrase_alwerre.mp3,Rlwene alwerre. Rlwene atwakeye apenye wele akelye rtame. Artntele anteyane ante arlpawele sometimes.,The split jack tree has an edible fruit. It is like a bush orange but smaller. It can be found in the hills and sometimes on the plains.
-069_Katyerre_Arlkerre.png,Bush tomato,"Katyerre, Arlkerre",069_Katyerre_Arlkerre.mp3,069phrase_katyerre_arlkerre.mp3,"Tyangkwerre aynanthe apenkawe, arlkerre aynewethe. Wetharle aynanthe apmere kwerarlaperte elpatewarle alpewene.","Let's go to where the bush tomotoes are in the burnt country, that same place we always find them."
-070_ilelkennge.png,Sandover Lily,Ilelkennge,070_ilelkennge.mp3,,,
-071_atwakeye.png,Wild Orange,Atwakeye,071_atwakeye.mp3,071phrase_atwakeye.mp3,"Atwakeye nharte aynanthe aynewethe, nhartepe arletye aperte twematye etyerranepe.","We want to eat the bush oranges, but they are all still hanging there unripe."
-072_yerrakwerre.png,Bush onion,Yerrakwerre ,072_yerrakwerre.mp3,072phrase_yerrakwerre.mp3,"Nthekangkwerre errwanthepe apenke? Na, nyarte aynanthe apenkarle. Ayerrere ltemarle apeke yerrakwerrewe wenhe.",Where are you mob going?' 'No we are just going to the north or maybe west to get bush onions.'
-073_tyanywenge.png,Tobacco,Tyanywenge,073_tyanywenge.mp3,073phrase_tyanywenge.mp3,"Tyanywenge atyenge etnyewenawe! Wantewe arre, tyanywenge aynewethe ilwekerele, etnyewene atyenge.","Give me some tobacco, I want to chew some tobacco please!"
-074_apmwe.png,Snake,Apmwe,074_apmwe.mp3,074phrase_apmwe.mp3,"Apmwe rtame kngweranthelkepe etne, kngweranthelkepe etne wanenye rtame.",Some snakes don't have names (only those one's with a name have a story).
-075_arinenge.png,Euro,Arinenge,075_arinenge.mp3,075phrase_arinenge.mp3,Arinenge nyarte artntenge errwele anteyane. Etnteyele nharte elye nthelarte apeke re anteyane.,Look at that euro sitting down on top of the rock. It might live in the cave or in the shade.
-076_yerrampe.png,Honey ant,Yerrampe,076_yerrampe.mp3,076phrase_yerrampe.mp3,"Wetharlarte alpenke same one warle apmere warle yerrampe aynanthe ilerantye angkwerre, ntharlarte aynanthe alpewene.   ",We will go back to that same place to get honeyants.
-077_arlpatye.png,Ringneck parrot,Arlpatye,077_arlpatye.mp3,077phrase_arlpatye.mp3,"Ye, arlpatye nhartepe apmelerre aperrane ilwekere akerrane, atnwenthe akine repe nharteye arlpatyepe, aynewethepe.",Ringneck parrots always fly around here. They are meat.
-078_arnkerrthe.png,Thorny Devil,Arnkerrthe,078_arnkerrthe.mp3,078phrase_arnkerrthe.mp3,"Arnkerrthepe nyartepe, nthekangkwerre re alpeyenteyane? Awe tyangkwerre ltemarle ngayelewe enthwelpenthwenke, arnkerrthepe.","Which way is that thorny devil going? Oh it's going west, looking around for food."
-079_wampere.png,Possum,Wampere,079_wampere.mp3,079phrase_wampere.mp3,"Wampere aynanthe ayneyayne atnwenthe atanthe awatnkakerre, aynewanthe wanenyele.","In the olden days we ate possum, before I was born."
-080_artnangke.png,Bilby,Artnangke,080_artnangke.mp3,080phrase_artnangke.mp3,Artnangkelepe atnyemayte apmeyayne. Wenhe ltemarle amperle Merlentye angkwerre amperlanteyayne. ,"Bilbies dig for witchetty grubs. You can find them west of Five-Mile, around there."
-081_ilere.png,Curlew,Ilere,081_ilere.mp3,081phrase_ilere.mp3,"Pwertaye, ilere-ketye, nthelartepe aynewanthepe atnhante interarlwerantye re, arntetyaylemeketye.","Watch out, there’s a curlew, its following us and might make us sick."
-082_ayepayte.png,Caterpillar,Ayepayte,082_ayepayte.mp3,082phrase_ayepayte.mp3,Ayepaytepe nhartepe apmelerre rtame aperrane.,Caterpillers can be found everywhere.
-083_entelyapelyape.png,Butterfly,Ntelyapelyape,083_entelyapelyape.mp3,083phrase_entelyapelyape.mp3,Ntelyapelyape nharte artnperr-entweyane arntwarle karrarrerane.,The butterflies are flittering and gathering around the water.
-084_enwenengke.png,Tawny Frogmouth,Enwenengke,084_enwenengke.mp3,084phrase_enwenengke.mp3,"Enwenengke nharte atnkwarengele angkerrane ketye, ilperele. Ilpere arenye rtame re enwenengkepe angkerrane.",The tawny frogmouth calls out at night from its hollow tree. It lives in a hollow tree.
-085_rrpwere.png,Magpie / Butcherbird,Rrpwere,085_rrpwere.mp3,085phrase_rrpwere.mp3,"Rrpwere nharte angkerrane ketye, ipmarrerantye aynewanthe rrpwerelepe.",Look out that magpie is telling us off.
-086_atnhelengkwe.png,Emu,Atnhelengkwe,086_atnhelengkwe.mp3,086phrase_atnhelengkwe.mp3,"Tyelartaye, atnhelengkwepe amperlanpanenhe. Tyangkwerre nawe, arntwepe kwatheyayne, tyangkwerre apewene enthwelp-enthwene. Tyewarlartepe kwatheyayne tneyele ayenge ngwenge akerre aperrernenyewethe.","Here look, this is an emu track it went past there to drink water. Let's go and keep looking for him over there. Oh he's been drinking here! We'll come back and look for it in the morning."
-087_pwelerrnge.png,Boobook Owl,Pwelerrnge,087_pwelerrnge.mp3,087phrase_pwelerrnge.mp3,"Pwerlerrngepe atnkwarengele 'tyangkwerre nthepele angkenke, pwerlerrngepe'. Nyarte kwereyenge ilperepe kwerelarle angkerranepe.",That boobook owl is always calling at night from over there. Calling from that hollow tree over there.
-088_kangkere.png,Bluetongue Lizard,Kangkere,088_kangkere.mp3,088phrase_kangkere.mp3,Kangkere aynanthe aynewethawe!,Let's eat the bluetongue lizard.
-089_kelelkelelke.png,Galah,Kelelkelelke,089_kelelkelelke.mp3,089phrase_kelelkelelke.mp3,"Kelelkelelke nhartepe aperrane ilwekerane, apmere arrpanenhe arle.","Galahs go everywhere, poor things."
-090_lyerre-lyerre.png,Fairy-wren,Lyerre-lyerre,090_lyerre-lyerre.mp3,090phrase_lyerre-lyerre.mp3,Pwertaye lyerre-lyerre nharte apenke anye angkelp-angkenke.,"Hey someone must be here, that little fairy wren is flying past and telling us something."
-091_atyerte.png,Spotted Quoll,Atyerte,091_atyerte.mp3,091phrase_atyerte.mp3,"Atyertepe nhape atnwenthe aynewantheyenge. Tyangkwe nthepele atyerte inengepe anteyane, Rtwerrpe angkwerre, apewene aynanthe ape. Car-we angketyewe apeke, alarrewethelke aynanthe.","The spotted quoll is meat, they are around Redbank. Let's go and see if there are any tracks there and we might find one then."
-092_atywetnpe.png,Perentie,Atywetnpe,092_atywetnpe.mp3,092phrase_atywetnpe.mp3,Atywetnpe tyangkwerre aynanthe — tyelartaye! Apenhe ampilpilewene aynanthepe atywetnpepe. Tyelartepange apenhe. Nyartepange arwelele etyerrane.,We'll follow this perentie's track . We'll follow it this way. It went this way. Oh it's here up in the tree.
-093_ilpertenye.png,Wedge-tailed Eagle,Ilpertenye,093_ilpertenye.mp3,093phrase_ilpertenye.mp3,"Ilpertenye aperrane atnwenthe wethewe ilwekere, nharte aherrewethewe aperrane arerr-apinterantye errwele theye.","There's a wedge-tailed eagle flying high above looking down for meat, maybe for kangaroo."
-094_mangwe.png,Cat,Mangwe,094_mangwe.mp3,,,
-095_mantharre.png,Death Adder,Mantharre,095_mantharre.mp3,095phrase_mantharre.mp3,"Mantharre ntheketyartawe, tewene kwere errwatewethe kantyele rtame mpwarlepe arrtyenke errtywernepe peyakele rtame.","Look out for the death adder, don't step on it, as it has a barb on its tail, but no poison in its teeth."
-096_aleke.png,Dog,Aleke,096_aleke.mp3,096phrase_aleke.mp3,"Aleke wayltake nhartepe aperrane, atnwenthe wethewe etnthwerrane, ilwekere.","That dingo is looking around for food, the poor thing. "
-097_aleke_awelengke.png,Cheeky dog,Aleke awelengke,097_aleke_awelengke.mp3,097phrase_aleke_awelengke.mp3,"Aleke inenge nhartepe awelengke — mpa, aynanthe anpatyarrewene, atnheme aynewanthe.","They are cheeky dogs, let's go before they attack us."
-098_mpwenyarrerane.png,Fall in love,Mpwenyarrerane,098_mpwenyarrerane.mp3,098phrase_mpwenyarrerane.mp3,"Nyarte ayenge mpwenyarrerane, nyartele aperranewethe. Nyartepe atyenge arelhe atnawerre atyengarle aperretnyewene, ayenge kwere mpwenyarrerane. ","I'm falling in love with that person, she is the right skin for me, she might come to me or I might go to that girl."
-099_rrkantarrerane.png,Laugh,Rrkantarrerane,099_rrkantarrerane.mp3,099phrase_rrkantarrerane.mp3,"Atnhantewe nge rrkantarrenkepe. Na, nyartele atyenge nywerrpele atyenge angkerranele atyenge rrkantel-eletnheyayne etnyerrantye.","Who are you laughing at? No, it's that joker who's making me laugh."
-100_etarreranenke.png,Thinking,Etarreranenke,100_etarreranenke.mp3,100phrase_etarreranenke.mp3,Alelaperte ayenge etarrengele alwene apertame.,"Wait a minute, let me think back."
-101_ipmarrerantyenke.png,Swearing,Ipmarrerantyenke,101_ipmarrerantyenke.mp3,101phrase_ipmarrerantyenke.mp3,Nthelartepe atyenge rtame ipmarrerantye wantepenherteyange? Just layeke ayenge kwereyenge ahewepenhe aperte atyengepe ipmarrerantye.,What is he growling at me about? It's not as if I've been giving him cheek.
-102_athamarrenke.png,Sad,Athamarrerane,102_athamarrenke.mp3,102phrase_athamarrenke.mp3,"Ayenge nthewartepe athamarrerane, nthewarteye iterrtyewe ayenge athamarrerane ilwekerewe.","I'm feeling sorry for that person, poor thing. I feel sad for them."
-103_ngangkaye.png,Healer,Ngangkaye,103_ngangkaye.mp3,103phrase_ngangkaye.mp3,"Ngangkaye ntethe arenawe, tyangkwerre ayenge artnweyenteyane aleme angkwerre, atnentye angkwerre apeke awe, tyarlenye nyarte atyenge ape arewene, ngangkayele.","Traditional healer, can you see the cause of the pain? I have a pain in my stomach, my throat and in my arm. Traditional healer can you check me?"
-104_arntetye.png,Sick,Arntetye,104_arntetye.mp3,104phrase_arntetye.mp3,"Awe ye, ayengepe arntetye arrenhe, nyartepe entweyane.","Yes, I got sick, that's why I'm lying down."
-105_ngkwelty-arenye.png,Money-hungry,Ngkwelty-arenye ,105_ngkwelty-arenye.mp3,105phrase_ngkwelty-arenye.mp3,Ngkweltyewe nyartepe etarrerane ngkweltye apeke nthelarte atyenge etnyewethe.,That person might be thinking about giving me money.
-106_pwerrketnherrantye.png,Snoring ,Pwerrketnherrantyenke,106_pwerrketnherrantye.mp3,106phrase_pwerrketnherrantye.mp3,Atnkwe ayenge enwenhe ilwekerele atye pwerrketnheyayne penhe. Rarle ayenge atyewarrelke arrelp-arrenhe.,Dear me I was asleep snoring! But now I've woken up.
-107_erlkwetharrerane.png,Spew,Erlkwetharrerane,107_erlkwetharrerane.mp3,107phrase_erlkwetharrerane.mp3,"Erlkwetharrenhawe, apale atye atnwenthe aynenye, something ntweperte apeke, nharte ayenge erlkwetharrenhelke, amenge impentye apeke atye aynenye.","I'm going to vomit because unwittingly I ate something bad, maybe the meat was flyblown."
-108_artnweyenenke.png,In pain,Artnweyenenke,108_artnweyenenke.mp3,108phrase_artnweyenenke.mp3,"Nyarte ayenge ake artnweyenteyane, aherrkelarle ayenge ampenhe.",I'm paining in the head from the sun.
-109_akarntetye.png,Headache,Akarntetye,109_akarntetye.mp3,109phrase_akarntetye.mp3,"Ake ayenge arntetyawe, artnweyenteyane.",I've got a headache.
-110_akngwe.png,Mad,Akngwe,110_akngwe.mp3,110phrase_akngwe.mp3,"Artweye nthewarte angkentyelawe, akngwe nhartepe ilwekerange, aynewantheyenge akngwe nyartepe.","Don't talk about that man, he's mad, our poor relative."
-111_awelengke.png,Angry,Awelengke,111_awelengke.mp3,111phrase_awelengke.mp3,"Awelengkarle atewenhanthe althileyayne, awelengke inengele.",The angry people were fighting. They were an angry mob.
-112_althere_arrerane.png,Homesick,Altherarrerane,112_althere_arrerane.mp3,112phrase_althere_arrerane.mp3,Mpelarte altherarrenke ayenge alpewethe ayenge apmerarle.,I'm homesick I want to go back home.
+file,name,name_arrernte,audio
+artwe.png,Man,Artwe,artwe.mp3
+arelhe.png,Woman,Arelhe,arelhe.mp3
+mutekaye.png,Troopie,Mutekaye,mutekaye.mp3
+urtne.png,Bush bus,Urtne,urtne.mp3
+mutekayebushcar.png,Bush car,Mutekaye inentye,mutekayeinentye.mp3
+tyaperapere.png,Footy,Tyaperapere,tyaperapere.mp3
+antyame.png,Swag,Antyame,antyame.mp3
+mwekarte.png,Hat,Mwekarte,mwekarte.mp3
+ure.png,Fire,Ure,ure.mp3
+tyampite.png,Billy can,Tyampite,tyampite.mp3
+irrweurinpe.png,Hot tea,Irrwe urinpe,irrweurinpe.mp3
+intelhentye.png,Rock art,Intelhentye,intelhentye.mp3
+apmere.png,Country / place,Apmere,apmere.mp3
+arrkentye.png,Carpetbagger,Ywekethe,ywekethe.mp3
+alye.png,Boomerang,Alye,alye.mp3
+kwetere.png,Weapon,Kwetere,kwetere.mp3
+alkwerte.png,Shield,Alkwerte,alkwerte.mp3
+altharte.png,Men's dance,Altharte,altharte.mp3
+anthepe.png,Women's dance,Anthepe,anthepe.mp3
+urtakerte.png,Heart,Urtakerte,urtakerte.mp3
+heart.png,Heart,Urtakerte,urtakerte.mp3
+kwertare.png,Crown,Kwertare,kwertare.mp3
+tyelarre.png,Flag,Tyelarre,tyelarre.mp3
+iltye.png,Hand,Iltye,iltye.mp3
+werte.png,What's up?,Werte,werte.mp3
+arrangkwe.png,No,Arrangkwe,arrangkwe.mp3
+angkeme.png,Talk,Angkeme,angkeme.mp3
+urrtyalthe.png,Liar,Urrtyalthe,urrtyalthe.mp3
+angayakwe.png,Hungry,Angayakwe,angayakwe.mp3
+ahelheantheme.png,Land rights,Ahelhe-anthirtneme,ahelheanthirtneme.mp3
+anihetnyeme.png,Land rights,Ahelhe-antheme,ahelheantheme.mp3
+antirrkweme.png,No More violence,Antirrkweme,antirrkweme.mp3
+impatye.png,Footprint,Impatye,impatye.mp3
+kwatyearnerre.png,Rockhole,Kwatye-arnerre,kwatyeanerre.mp3
+aherrekenheimpatye.png,Roo track,Aherre impatye,aherreimpatye.mp3
+anerrirreme.png,Group sitting,Anerr-irreme,anerrirreme.mp3
+amiwarre.png,Milky Way,Amiwarre,amiwarre.mp3
+kwerralyepule.png,Morning Star,Kwerralye-pule,kwerralyepule.mp3
+arrarlkwe.png,Seven Sisters stars,Arrarlkwe,arrarlkwe.mp3
+arlrwarrere.png,Whirly wind,Arlewarrere,arlrwarrere.mp3
+ingkeampeme.png,Burning foot,Ingke ampeme,ingkeampeme.mp3
+urewe.png,River flowing,Kwatye-urewe,kwatyeurewe.mp3
+urlampe.png,Rain cloud,Urlampe,urlampe.mp3
+kereakantye.png,Kangaroo tail,Kere-akantye,kereakange.mp3
+aweleawele.png,Bush tomato,Awele-awele,aweleawele.mp3
+yalke.png,Bush onion,Yalke,yalke.mp3
+pmerlpe.png,Quandong,Pmerlpe,pmerlpe.mp3
+anatye.png,Bush yam,Anatye,anatye.mp3
+atnerteurrperle.png,Sturt's Desert Pea,Atnerte urrperle,atnerteurrperle.mp3
+pertipelawe.png,Sturt's Desert Rose,Antethe,antethe.mp3
+antethe.png,Flower,Antethe,antethe.mp3
+nameakurne.png,Buffel,Name-akurne,nameakurne.mp3
+yerrampe.png,Honey ant,Yerrampe,yerrampe.mp3
+akngwelye.png,Dingo,Akngwelye,akngwelye.mp3
+antenhe.png,Possum,Antenhe,antenhe.mp3
+unyerre.png,Thorny devil,Unyerre,unyerre.mp3
+aherte.png,Bilby,Aherte,aherte.mp3
+akwerre.png,Golden bandicoot,Akwerre,akwerre.mp3
+arrpwere.png,Magpie,Arrpwere,arrpwere.mp3
+arlpatye.png,Ringneck parrot,Arlpatye,arlpatye.mp3
+lyerrelyerre.png,Fairy wren,Lyerre-lyerre,lyerrelyerre.mp3
+ilentye.png,Galah,Ilentye,ilentye.mp3
+utnerrengatye.png,Caterpillar,Utnerrengatye,utnerrengatye.mp3
+apmwe.png,Snake,Apmwe,apmwe.mp3
+arenge.png,Euro,Arenge,arenge.mp3
+arleye.png,Emu,Arleye,arleye.mp3
+antenhe.png,Possum,Antenhe,antenhe.mp3
+atyunpe.png,Perentie,Atyunpe,atyunpe.mp3
+irretye.png,Wedge-tailed eagle,Irretye,irretye.mp3
+irrarnte.png,Black cockatoo,Irrarnte,irrarnte.mp3
+atyelpe.png,Quoll,Atyelpe,atyelpe.mp3
+cheekydog.png,Cheeky dog,Akngwelye irrpelthe,akngwelyeirrpelthe.mp3
+ithane.png,Ghost,Ithane,ithane.mp3
+akangkeme.png,Happy,Akangkeme,akangkeme.mp3
+anelhentye.png,Cheeky,Anelhentye,anelhentye.mp3
+alhirreme.png,In love,Alhirreme,alhirreme.mp3
+aretherre.png,Northwest wind,Arrwempe,arwempe.mp3
+rlkerte.png,Sick,Rlkerte,rlkerte.mp3
+antewekeantewe.png,Vomit,Anteweke-antewe,antewekeantewe.mp3
+ngangkere.png,Healer,Ngangkere,ngangkere.mp3
+ingkwelpe.png,Native tobacco,Ingkwelpe,ingkwelpe.mp3
+arerte.png,Crazy,Arerte,arerte.mp3
+ilteme.png,Swearing,Ilteme,ilteme.mp3
+apwertealkwentyeakngerre.png,Money hungry,Apwerte alkwentye-akngerre,apwertealkwentyeakngerre.mp3
+ntyerreme.png,Snoring,Ntyerreme,ntyerreme.mp3
+alhwarrpe.png,Sad,Alhwarrpe,alhwarrpe.mp3
+akearnteme.png,Hungover,Ake-arnteme,akearnteme.mp3
+ahakngerre.png,Angry,Ahakngerre,ahakngerre.mp3
+arrakeleakele.png,Worried,Arrakele-akele,arrakeleakele.mp3
+arrakertelethilemeleft.png,Pointing left,Arrakerte-le thileme,arrakertelethileme.mp3
+arrakertelethilemeright.png,Pointing right,Arrakerte-le thileme,arrakertelethileme.mp3

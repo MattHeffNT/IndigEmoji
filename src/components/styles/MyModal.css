@@ -46,7 +46,7 @@ ion-chip {
 
 /* // katij chip */
 #aChip {
-  background: #d47732;
+  background: #fab923;
 }
 
 .modal-icon {
@@ -55,7 +55,6 @@ ion-chip {
   padding: 10px;
   margin-right: -1rem;
 }
-
 .modal-icon + h4 {
   margin-top: 10%;
   padding-left: 1rem;
@@ -63,12 +62,12 @@ ion-chip {
 
 /* changes color of play icon when pressed */
 .audio-active {
-  color: #d47732;
+  color: #fab923;
   transition: -1s;
 }
 
 .modal-icon-pressed {
-  color: #d47732;
+  color: #fab923;
   transition: 0.25s;
 }
 
