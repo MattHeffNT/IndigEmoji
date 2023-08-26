@@ -1,6 +1,6 @@
 {
-  "appId": "io.kaytetyemoji.app",
-  "appName": "Kaytetyemoji",
+  "appId": "com.indigemoji",
+  "appName": "IndigEmoji",
   "webDir": "build",
   "bundledWebRuntime": true,
   "plugins": {
