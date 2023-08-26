@@ -4,7 +4,7 @@ This is an Ionic(v6)/React/TypeScript based recreation of the [IndigEmoji](https
 
 And the source code for the updated IndigEmoji app on the play store:
 
-https://play.google.com/store/apps/details?id=com.indigemoji
+[IndigEmoji](https://play.google.com/store/apps/details?id=com.indigemoji)
 
 ## Install
 
