@@ -8,12 +8,13 @@
   padding: 2.5em;
 }
 
-.info-container strong {
-  font-family: 'Open Sans';
-  font-weight: 350;
-  font-size: 20px;
-  line-height: 26px;
-}
+/* .info-container strong { */
+/*   font-family: 'Open Sans'; */
+/*   font-weight: 350; */
+/*   font-size: 20px; */
+/*   line-height: 26px; */
+/* } */
+
 .info-container h1 {
   text-align: left;
 }
