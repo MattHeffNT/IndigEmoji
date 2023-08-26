@@ -22,11 +22,12 @@
 }
 
 .swiper-pagination.swiper-pagination-bullets {
-  background: #fab923;
+  /* background: #fab923; */
+  --background: url('/src/assets/images/splash.png') center/100% !important;
   padding-bottom: 2em;
   position: fixed;
   bottom: 0px;
-  opacity: 1;
+  z-index: 100;
 }
 
 #slide-img {

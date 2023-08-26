@@ -55,8 +55,10 @@ ion-chip {
   padding: 10px;
   margin-right: -1rem;
 }
+
+/* title (like share/word/phrase) */
 .modal-icon + h4 {
-  margin-top: 10%;
+  margin-top: 13%;
   padding-left: 1rem;
 }
 
