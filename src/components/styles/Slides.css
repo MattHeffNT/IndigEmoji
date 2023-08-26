@@ -22,8 +22,7 @@
 }
 
 .swiper-pagination.swiper-pagination-bullets {
-  /* background: #fab923; */
-  --background: url('/src/assets/images/splash.png') center/100% !important;
+  background: #fab923;
   padding-bottom: 2em;
   position: fixed;
   bottom: 0px;
