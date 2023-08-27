@@ -1,4 +1,4 @@
-package io.kaytetyemoji.app;
+package com.indigemoji;
 
 import com.getcapacitor.BridgeActivity;
 

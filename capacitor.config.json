@@ -1,6 +1,6 @@
 {
   "appId": "com.indigemoji",
-  "appName": "IndigEmoji",
+  "appName": "Indigemoji",
   "webDir": "build",
   "bundledWebRuntime": true,
   "plugins": {
