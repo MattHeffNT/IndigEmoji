@@ -11,6 +11,7 @@ import React from 'react';
 import { useParams } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
 import './Page.css';
+//@ts-ignore
 import homeIcon from '../assets/images/start_header_no.png';
 
 const Page: React.FC = () => {
@@ -19,24 +20,27 @@ const Page: React.FC = () => {
 
   return (
     <IonPage>
-      <IonHeader id="header">
+      <IonHeader id='header'>
         <IonToolbar>
-          <IonButtons slot="end">
+          <IonButtons slot='end'>
             {/* side menu hamburger button  */}
             <IonMenuButton />
           </IonButtons>
 
           {/* Logo/Icon   */}
-          <IonButtons slot="start">
-            <IonButton routerLink="/page/Home" routerDirection="none" id="home-icon-button">
-              <img src={homeIcon} alt="home icon" id="homeIcon" />
+          <IonButtons slot='start'>
+            <IonButton
+              routerLink='/page/Home'
+              routerDirection='none'
+              id='home-icon-button'>
+              <img src={homeIcon} alt='home icon' id='homeIcon' />
             </IonButton>
           </IonButtons>
         </IonToolbar>
       </IonHeader>
 
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        <IonHeader collapse='condense'>
           <IonToolbar></IonToolbar>
         </IonHeader>
         <ExploreContainer name={name} />
