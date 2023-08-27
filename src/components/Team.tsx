@@ -32,8 +32,9 @@ const Team: React.FC<any> = () => {
           of the Johnston Foundation.
         </p>
         <p>
-          Additional developers: Matthew Ngamurrari Heffernan,{' '}
-          <a href='https://lav.io/'>Sam Lavigne</a>
+          Additional developers:
+          <a href='https://lav.io/'> Sam Lavigne</a>, Matthew Ngamurrari
+          Heffernan{' '}
         </p>
         <p>
           Emoji advisers: Veronica Dobson Perrurle, Kathleen Wallace Kemarre,
