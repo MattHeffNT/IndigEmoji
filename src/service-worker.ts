@@ -21,11 +21,11 @@ registerRoute(
       url.pathname.endsWith('.css') ||
       url.pathname.endsWith('.js') ||
       url.pathname.endsWith('.tsx') ||
-      url.pathname.endsWith('.ts') ||
-      new StaleWhileRevalidate({
-        cacheName: 'assets',
-        plugins: [new ExpirationPlugin({ maxEntries: 50 })],
-      }))
+      url.pathname.endsWith('.ts')),
+  new StaleWhileRevalidate({
+    cacheName: 'assets',
+    plugins: [new ExpirationPlugin({ maxEntries: 50 })],
+  })
 );
 
 // Set up App Shell-style routing, so that all navigation requests

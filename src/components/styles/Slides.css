@@ -1,5 +1,5 @@
 #slide-content {
-  --background: url('/src/assets/images/splash.png') center/100% !important;
+  --background: url('../../assets/images/splash.png') center/100% !important;
 }
 
 .slide-container {

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Capacitor } from '@capacitor/core';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
@@ -15,8 +16,13 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://cra.link/PWA
-// serviceWorkerRegistration.unregister();
-serviceWorkerRegistration.register();
+// The native app already loads everything from the device, so only the web build
+// uses the service worker; unregistering also removes one installed by older versions
+if (Capacitor.isNativePlatform()) {
+  serviceWorkerRegistration.unregister();
+} else {
+  serviceWorkerRegistration.register();
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
