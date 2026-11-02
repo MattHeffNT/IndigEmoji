@@ -1,29 +1,24 @@
-import { useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { IonRow } from '@ionic/react';
 
-const AudioRow: React.FC<any> = ({ emoji, icon, onClose }) => {
+const AudioRow: React.FC<any> = ({ emoji, icon, onClose, onAudioLoaded }) => {
+  const IonIcon = icon;
   const audioRow = useRef<any>();
   const phraseRow = useRef<any>();
-  const playEvent = useRef<any>();
-  const playPhraseEvent = useRef<any>();
-  const IonIcon = icon;
+
+  let playEvent = useRef<HTMLAudioElement>(new Audio(emoji.audio));
+  let playPhraseEvent = useRef<HTMLAudioElement>(new Audio(emoji.phrases));
 
   const phrase = emoji.phrases;
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [phrasePlaying, setPhrasePlaying] = useState(false);
 
-  const audio: HTMLAudioElement = new Audio(emoji.audio);
+  let [isPlaying, setIsPlaying] = useState(false);
+  let [phrasePlaying, setPhrasePlaying] = useState(false);
 
-  // const audio: HTMLAudioElement = new Audio(emoji.audio) as HTMLAudioElement;
-  audio.preload = 'metadata';
-  audio.controls = true;
-
-  // //play audio and function so that the colour of the play button stays yellow until end of audio
   const playAudio = (e: any) => {
-    // depending on whether play/phrase was pressed set the States for the respective element
     const audioPhrase = e.currentTarget.id;
-    let prevValue: any;
 
+    // toggle the current play state
+    let prevValue: any;
     // toggle play/ pause
     // grab previous value when state updated, which we can use to keep track
     if (audioPhrase === 'audio') {
@@ -35,7 +30,6 @@ const AudioRow: React.FC<any> = ({ emoji, icon, onClose }) => {
       setPhrasePlaying(true);
       setPhrasePlaying(!prevValue);
     }
-
     // check if not the previous value then play and on toggle, pause and reset audio
     // then remove css class from icon
     if (!prevValue) {
@@ -72,64 +66,86 @@ const AudioRow: React.FC<any> = ({ emoji, icon, onClose }) => {
       }
     }
 
-    // audio on ended functions
     playEvent.current.onended = () => {
-      audio.currentTime = audio.duration;
-      audioRow.current.classList.remove('audio-active');
       setIsPlaying(false);
+      audioRow.current.classList.remove('audio-active');
       if (phrase) {
         phraseRow.current.classList.remove('ghost');
       }
     };
+
     playPhraseEvent.current.onended = () => {
-      audio.currentTime = audio.duration;
       setPhrasePlaying(false);
       phraseRow.current.classList.remove('audio-active');
       audioRow.current.classList.remove('ghost');
     };
   };
 
-  // once audio has finished, set playing back to false and reset play icon style to default state
-  // modal close event handler
-  // const Close = () => {
-  //   // stop the audio
-  //   setIsPlaying(false);
+  // cleanup
+  useEffect(() => {
+    // Ensure that the component is mounted
+    let isMounted = true;
 
-  //   // we need to check if phrase is loaded on the emoji otherwise the close button won't work
-  //   // because below statement depends on it1
-  //   if (phrase) {
-  //     setPhrasePlaying(false);
-  //     phraseRow.current.classList.remove('audio-active');
-  //     phraseRow.current.classList.remove('ghost');
-  //   }
-  //   // remove ochre styling from audio/phrase rows
-  //   audioRow.current.classList.remove('audio-active');
-  //   audioRow.current.classList.remove('ghost');
+    const cleanup = () => {
+      if (isMounted) {
+        // reset to default values
+        setIsPlaying(false);
+        setPhrasePlaying(false);
 
-  //   // close the modal
-  //   onClose();
-  // };
+        // audioRow
+        // and PhraseRow onlcick Event Listener remove
+
+        // Remove event listeners
+        if (playEvent.current) {
+          playEvent.current.pause();
+          playEvent.current.currentTime = 0;
+          playEvent.current.onended = null;
+        }
+        if (playPhraseEvent.current) {
+          playPhraseEvent.current.pause();
+          playPhraseEvent.current.currentTime = 0;
+          playPhraseEvent.current.onended = null;
+        }
+
+        isMounted = false;
+      }
+    };
+
+    return cleanup;
+  }, []);
 
   return (
     <div>
       <audio src={emoji.audio} ref={playEvent}></audio>
-      <IonRow ref={audioRow} onClick={playAudio} className="iconRow" id="audio">
+      <IonRow ref={audioRow} onClick={playAudio} className='iconRow' id='audio'>
         {isPlaying ? (
-          <IonIcon name="stop-circle" className="modal-icon" size="large" />
+          <IonIcon name='stop-circle' className='modal-icon' size='large' />
         ) : (
-          <IonIcon name="play-circle-outline" className="modal-icon" size="large" />
+          <IonIcon
+            name='play-circle-outline'
+            className='modal-icon'
+            size='large'
+          />
         )}
         <h4> word </h4>
       </IonRow>
       <audio src={emoji.phrases} ref={playPhraseEvent}></audio>
       {/* // if phrase in the object then render it in the modal otherwise don't show anything */}
       {phrase ? (
-        <IonRow ref={phraseRow} onClick={playAudio} className="iconRow" id="phrase">
+        <IonRow
+          ref={phraseRow}
+          onClick={playAudio}
+          className='iconRow'
+          id='phrase'>
           {/* change icon depending on whether the button is playing or not */}
           {phrasePlaying ? (
-            <IonIcon name="stop-circle" className="modal-icon" size="large" />
+            <IonIcon name='stop-circle' className='modal-icon' size='large' />
           ) : (
-            <IonIcon name="play-circle-outline" className="modal-icon" size="large" />
+            <IonIcon
+              name='play-circle-outline'
+              className='modal-icon'
+              size='large'
+            />
           )}
 
           <h4> phrase </h4>

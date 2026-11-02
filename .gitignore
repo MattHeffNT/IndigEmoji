@@ -18,6 +18,9 @@
 
 # for main branch
 
+# Don't add this file to the repo
+keystore.properties
+
 
 
 # ios
