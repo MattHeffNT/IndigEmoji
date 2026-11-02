@@ -53,6 +53,11 @@ const Info: React.FC<any> = () => {
             View terms and conditions of use.
           </a>
         </p>
+        <p>
+          <a href="mailto:werte@indigemoji.com.au?subject=Child%20safety%20report%20-%20Indigemoji%20app">
+            Report a child safety issue.
+          </a>
+        </p>
 
         <Suspense fallback={<div>Loading...</div>}>
           <Slides
