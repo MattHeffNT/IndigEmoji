@@ -7,7 +7,8 @@
     "SplashScreen": {
       "launchShowDuration": 1300,
       "launchAutoHide": true,
-      "androidScaleType": "CENTER_CROP"
+      "androidScaleType": "CENTER_CROP",
+      "useDialog": true
     }
   },
   "ScreenOrientation": {
