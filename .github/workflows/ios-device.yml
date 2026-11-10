@@ -1,6 +1,6 @@
 # Builds an ad-hoc signed .ipa for installing directly on registered test iPhones (no App Store/TestFlight).
 # The .ipa is attached to the run as the "indigemoji-adhoc-ipa" artifact. To install from Linux:
-#   gh run download <run-id> -n indigemoji-adhoc-ipa && ideviceinstaller install App.ipa
+#   gh run download <run-id> -n indigemoji-adhoc-ipa && ideviceinstaller -i App.ipa
 #
 # Runs on pushes to branches other than main that touch the app, or from the Actions tab.
 # Uses the same secrets as ios-release.yml, plus two Ad Hoc profiles that include the test devices:

@@ -64,7 +64,6 @@ jobs:
           test -d "$appex" || { echo "::error::Stickers.appex missing from the app"; exit 1; }
           test -f "$appex/Assets.car" || { echo "::error::sticker asset catalog was not compiled"; exit 1; }
           /usr/libexec/PlistBuddy -c 'Print :NSExtension:NSExtensionPointIdentifier' "$appex/Info.plist"
-          echo "stickers compiled: $(xcrun assetutil --info "$appex/Assets.car" | grep -c '"RenditionName" : ".*\.png"')"
 
       - name: Run in simulator and take screenshots
         run: |
