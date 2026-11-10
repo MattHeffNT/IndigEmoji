@@ -1,0 +1,92 @@
+# Takes App Store screenshots in the iOS Simulator: the welcome slide (first launch) and the
+# emoji screen (second launch), on a 13-inch iPad and a 6.9-inch iPhone, with a clean status bar.
+# Screenshots are attached to the run as the "app-store-screenshots" artifact.
+#
+# Run it from the Actions tab ("Run workflow"), or push to the `ios-screenshots` branch.
+
+name: iOS screenshots
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ios-screenshots]
+
+jobs:
+  screenshots:
+    runs-on: macos-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # CRA treats lint warnings as errors when CI=true
+      - run: npm run build
+        env:
+          CI: false
+
+      - run: npx cap sync ios
+
+      - name: Build for simulator
+        run: |
+          xcodebuild build \
+            -project ios/App/App.xcodeproj \
+            -scheme App \
+            -configuration Release \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath "$RUNNER_TEMP/dd" \
+            CODE_SIGNING_ALLOWED=NO
+          echo "APP_PATH=$RUNNER_TEMP/dd/Build/Products/Release-iphonesimulator/App.app" >> "$GITHUB_ENV"
+
+      - name: Take screenshots
+        run: |
+          xcrun simctl list devices available | grep -E 'iPad|iPhone' || true
+          shoot() {  # <name prefix to match> <output folder>
+            udid=$(xcrun simctl list devices available -j | python3 -c '
+          import json, sys
+          prefix = sys.argv[1]
+          devs = [d for rt, ds in sorted(json.load(sys.stdin)["devices"].items()) if "iOS" in rt for d in ds]
+          print(next(d["udid"] for d in reversed(devs) if d["name"].startswith(prefix)))' "$1")
+            echo "== $1 -> $udid"
+            xcrun simctl boot "$udid"
+            xcrun simctl bootstatus "$udid" -b
+            xcrun simctl status_bar "$udid" override --time 9:41 --dataNetwork wifi --wifiMode active --wifiBars 3 \
+              --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
+            xcrun simctl install "$udid" "$APP_PATH"
+            mkdir -p "screenshots/$2"
+            # first launch shows the welcome slides
+            xcrun simctl launch "$udid" au.com.indigemoji
+            sleep 15
+            xcrun simctl io "$udid" screenshot "screenshots/$2/1-welcome.png"
+            # later launches go straight to the emojis
+            xcrun simctl terminate "$udid" au.com.indigemoji
+            xcrun simctl launch "$udid" au.com.indigemoji
+            sleep 15
+            xcrun simctl io "$udid" screenshot "screenshots/$2/2-emojis.png"
+            xcrun simctl shutdown "$udid"
+          }
+          shoot "iPad Pro 13-inch" ipad-13in
+          shoot "iPhone 17 Pro Max" iphone-6.9in
+          python3 - <<'EOF'
+          import struct, glob
+          for f in sorted(glob.glob("screenshots/*/*.png")):
+              w, h = struct.unpack(">II", open(f, "rb").read()[16:24])
+              print(f, f"{w}x{h}")
+          EOF
+
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: app-store-screenshots
+          path: screenshots/
+          if-no-files-found: ignore
