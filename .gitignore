@@ -23,10 +23,10 @@ keystore.properties
 
 
 
-# ios
+# ios (asset catalogs need their Contents.json files despite *json above)
+!ios/App/**/*.json
 ios/DerivedData
 ios/App/App/public
-ios/App/kaytetye stickers/Stickers.xcassets
 
 #assets generator by imessage sticker app icons
 resources/resource

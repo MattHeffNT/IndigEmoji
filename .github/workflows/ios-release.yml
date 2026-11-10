@@ -1,0 +1,139 @@
+# Builds the iOS app (with its iMessage sticker pack), signs it for the App Store and uploads it to
+# App Store Connect, where it appears in TestFlight. Submitting for review is still done by hand.
+#
+# Run it from the Actions tab ("Run workflow"), or push a tag like `v1.8`.
+# The App Store version comes from MARKETING_VERSION in ios/App/App.xcodeproj (must be above the live 1.7).
+#
+# One-time setup on developer.apple.com (Certificates, Identifiers & Profiles):
+#   - an "Apple Distribution" certificate, exported with its private key as a .p12
+#   - the App ID au.com.indigemoji.Stickers (au.com.indigemoji already exists)
+#   - two App Store provisioning profiles, named exactly:
+#       "Indigemoji App Store"           for au.com.indigemoji
+#       "Indigemoji Stickers App Store"  for au.com.indigemoji.Stickers
+#
+# Required repository secrets (Settings → Secrets and variables → Actions):
+#   IOS_DIST_CERT_P12_BASE64   base64 of the Apple Distribution .p12
+#   IOS_DIST_CERT_PASSWORD     password of that .p12
+#   APPLE_TEAM_ID              10-character team ID (Membership details on developer.apple.com)
+#   APPSTORE_API_KEY_ID        App Store Connect API team key (App Manager role): Key ID
+#   APPSTORE_API_ISSUER_ID     ...its Issuer ID
+#   APPSTORE_API_PRIVATE_KEY   ...contents of its AuthKey_XXXX.p8 file
+
+name: iOS release
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+concurrency:
+  group: ios-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+
+      # build numbers must be unique within a version; include the attempt so re-runs don't collide
+      - run: |
+          echo "BUILD_NUMBER=${GITHUB_RUN_NUMBER}.${GITHUB_RUN_ATTEMPT}" >> "$GITHUB_ENV"
+          echo "ARCHIVE_PATH=$RUNNER_TEMP/App.xcarchive" >> "$GITHUB_ENV"
+          echo "API_KEY_PATH=$RUNNER_TEMP/AuthKey.p8" >> "$GITHUB_ENV"
+
+      # App Store uploads must be built with a recent SDK
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # CRA treats lint warnings as errors when CI=true
+      - run: npm run build
+        env:
+          CI: false
+
+      - run: npx cap sync ios
+
+      - name: Import distribution certificate
+        uses: apple-actions/import-codesign-certs@v7
+        with:
+          p12-file-base64: ${{ secrets.IOS_DIST_CERT_P12_BASE64 }}
+          p12-password: ${{ secrets.IOS_DIST_CERT_PASSWORD }}
+
+      - name: Download app provisioning profile
+        uses: apple-actions/download-provisioning-profiles@v7
+        with:
+          bundle-id: au.com.indigemoji
+          profile-type: IOS_APP_STORE
+          issuer-id: ${{ secrets.APPSTORE_API_ISSUER_ID }}
+          api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
+          api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+
+      - name: Download sticker pack provisioning profile
+        uses: apple-actions/download-provisioning-profiles@v7
+        with:
+          bundle-id: au.com.indigemoji.Stickers
+          profile-type: IOS_APP_STORE
+          issuer-id: ${{ secrets.APPSTORE_API_ISSUER_ID }}
+          api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
+          api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+
+      - name: Archive
+        env:
+          TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+        run: |
+          xcodebuild archive \
+            -project ios/App/App.xcodeproj \
+            -scheme App \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath "$ARCHIVE_PATH" \
+            DEVELOPMENT_TEAM="$TEAM_ID" \
+            CURRENT_PROJECT_VERSION="$BUILD_NUMBER"
+
+      - name: Upload to App Store Connect
+        env:
+          TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+          API_KEY: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+          API_KEY_ID: ${{ secrets.APPSTORE_API_KEY_ID }}
+          API_ISSUER_ID: ${{ secrets.APPSTORE_API_ISSUER_ID }}
+        run: |
+          printf '%s\n' "$API_KEY" > "$API_KEY_PATH"
+          cat > "$RUNNER_TEMP/ExportOptions.plist" <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key><string>app-store-connect</string>
+            <key>destination</key><string>upload</string>
+            <key>teamID</key><string>$TEAM_ID</string>
+            <key>signingStyle</key><string>manual</string>
+            <key>provisioningProfiles</key>
+            <dict>
+              <key>au.com.indigemoji</key><string>Indigemoji App Store</string>
+              <key>au.com.indigemoji.Stickers</key><string>Indigemoji Stickers App Store</string>
+            </dict>
+            <key>manageAppVersionAndBuildNumber</key><false/>
+            <key>uploadSymbols</key><true/>
+          </dict>
+          </plist>
+          EOF
+          xcodebuild -exportArchive \
+            -archivePath "$ARCHIVE_PATH" \
+            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" \
+            -exportPath "$RUNNER_TEMP/export" \
+            -authenticationKeyPath "$API_KEY_PATH" \
+            -authenticationKeyID "$API_KEY_ID" \
+            -authenticationKeyIssuerID "$API_ISSUER_ID"
+
+      - name: Remove API key
+        if: always()
+        run: rm -f "$API_KEY_PATH"
